@@ -2,7 +2,7 @@
   <v-navigation-drawer v-model="drawer" fixed app clipped>
     <v-list density="comfortable" class="pt-3 white--text">
       <v-list-item v-for="source in sources"
-                   :key="sources.id"
+                   :key="source.id"
                    @click="onSourceSelected(source)">
         <v-list-item-avatar start rounded>
           <v-avatar>
@@ -37,11 +37,11 @@ export default {
     }
   },
 
-  create(){
+  created(){
     this.newsApi.getSources().then(response=>{
       this.sources=response.data.sources;
       this.sources.map(source=>source.urlToLogo=this.newsApi.getUrlToLogo(source));
-      console.log(`data: ${response.data.source}`);
+      console.log(`data: ${response.data.sources}`);
     })
     .catch(e=> {
       this.errors.push(e);

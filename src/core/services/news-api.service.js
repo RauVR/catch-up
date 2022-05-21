@@ -16,7 +16,7 @@ export class NewsApiService{
     }
 
     getUrlToLogo(source){
-        return this.logoApi.getUrlToLogo(Source);
+        return this.logoApi.getUrlToLogo(source);
     }
 
 }

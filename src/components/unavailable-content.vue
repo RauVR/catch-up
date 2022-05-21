@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "unavailable-content"
+  name: "unavailable-content",
   props:{
     errors:null
   }

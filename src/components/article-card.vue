@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  name: "article-card"
+  name: "article-card",
   props:{
     article:null
   }
