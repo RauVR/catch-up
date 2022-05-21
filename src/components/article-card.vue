@@ -29,7 +29,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn small replace color="info" v-bind:href="article.url" target="_blank">Read More </v-btn>
+      <v-btn small replace color="info" v-bind:href="article.url" target="_blank">{{ $t('read-more') }} </v-btn>
 
     </v-card-actions>
 
