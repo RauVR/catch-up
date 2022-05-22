@@ -3,6 +3,13 @@
     <v-app-bar app color="primary">
       <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
       <v-app-bar-title> CatchUp</v-app-bar-title>
+
+      <v-spacer></v-spacer>
+
+      <template v-slot:append>
+        <language-switcher/>
+      </template>
+
     </v-app-bar>
 
     <side-menu :drawer="drawer" v-on:source-selected="setSource"></side-menu>
@@ -27,11 +34,13 @@ import SideMenu from "./components/side-menu.vue";
 import MainContent from "./components/main-content.vue";
 import UnavailableContent from "./components/unavailable-content.vue";
 import FooterContent from "./components/footer-content.vue";
+import LanguageSwitcher from "./components/language-switcher.vue";
 
 export default {
   name: 'App',
 
   components: {
+    LanguageSwitcher,
     FooterContent,
     UnavailableContent,
     MainContent,

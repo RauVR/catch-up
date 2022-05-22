@@ -1,3 +1,9 @@
 {
-  "read-more": "Ver mas"
+  "read-more": "Ver mas",
+  "unavailable-news": "El Servicio de noticias no está disponible ahora",
+  "authoring-phrase": {
+    "intro": "Hecho con",
+    "use": "utilizando",
+    "author": "por el Equipo de Desarrollo de {brand}"
+  }
 }
